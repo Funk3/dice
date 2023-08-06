@@ -2,12 +2,12 @@ import react from 'react';
 import {Text, View} from 'react-native';
 import Styles from '../styles/styles';
 
-const Bottom_Bar = () => {
+const Main_Screen = () => {
   return (
     <View style={Styles.mainContainer}>
-      <Text style={Styles.Bottom_Bar}>I am the bottom</Text>
+      <Text style={Styles.Main_Screen}>I am the main part</Text>
     </View>
   );
 };
 
-export default Bottom_Bar;
+export default Main_Screen;
