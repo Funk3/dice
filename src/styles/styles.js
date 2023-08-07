@@ -3,12 +3,12 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const Styles = StyleSheet.create({
   divContainer: {
-    marginTop: 50,
+
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'red'
+    borderColor: 'red',
+    height: '100%',
   },
   Bottom_Bar: {
     color: 'red',
@@ -21,12 +21,19 @@ const Styles = StyleSheet.create({
     fontSize: 50
   },
   mainContainer: {
-    marginTop: 50,
-    flexDirection: 'column',
+    flexGrow: 12,
     justifyContent: 'center',
-    alignItems: 'flex-end',
+    alignItems: 'center',
     borderWidth: 1,
     borderColor: 'blue'
+  },
+  bottomContainer:
+  {
+    flexGrow: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'green'
   }
 })
 

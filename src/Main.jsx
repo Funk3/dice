@@ -1,5 +1,5 @@
 import react from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, SafeAreaView} from 'react-native';
 import Styles from './styles/styles';
 
 //components
@@ -8,10 +8,10 @@ import Main_Screen from './components/main_screen';
 
 const Main = () => {
   return (
-    <View style={Styles.divContainer}>
+    <SafeAreaView style={Styles.divContainer}>
       <Main_Screen />
       <Bottom_Bar />
-    </View>
+    </SafeAreaView>
   );
 };
 

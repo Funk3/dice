@@ -4,7 +4,7 @@ import Styles from '../styles/styles';
 
 const Bottom_Bar = () => {
   return (
-    <View style={Styles.mainContainer}>
+    <View style={Styles.bottomContainer}>
       <Text style={Styles.Bottom_Bar}>I am the bottom</Text>
     </View>
   );
