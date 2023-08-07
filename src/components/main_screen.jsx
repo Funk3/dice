@@ -1,11 +1,11 @@
 import react from 'react';
 import {Text, View} from 'react-native';
-import Styles from '../styles/styles';
+import styles from '../styles/styles';
 
 const Main_Screen = () => {
   return (
-    <View style={Styles.mainContainer}>
-      <Text style={Styles.Main_Screen}>I am the main part</Text>
+    <View style={styles.mainContainer}>
+      <Text style={styles.Main_Screen}>I am the main part</Text>
     </View>
   );
 };

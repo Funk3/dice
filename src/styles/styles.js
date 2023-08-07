@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
   divContainer: {
-
+    backgroundColor: 'grey',
     flexDirection: 'column',
     justifyContent: 'center',
     borderWidth: 1,
@@ -11,7 +11,7 @@ const Styles = StyleSheet.create({
     height: '100%',
   },
   Bottom_Bar: {
-    color: 'red',
+    color: 'yellow',
     fontWeight: 'bold',
     fontSize: 30
   },
@@ -30,11 +30,12 @@ const Styles = StyleSheet.create({
   bottomContainer:
   {
     flexGrow: 1,
-    justifyContent: 'flex-end',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'green'
   }
 })
 
-export default Styles
+export default styles

@@ -1,11 +1,13 @@
 import react from 'react';
 import {Text, View} from 'react-native';
-import Styles from '../styles/styles';
+import styles from '../styles/styles';
+import D20 from './dice';
 
 const Bottom_Bar = () => {
   return (
-    <View style={Styles.bottomContainer}>
-      <Text style={Styles.Bottom_Bar}>I am the bottom</Text>
+    <View style={styles.bottomContainer}>
+      <D20 />
+      <Text style={styles.Bottom_Bar}>I am the bottom</Text>
     </View>
   );
 };
