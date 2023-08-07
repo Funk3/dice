@@ -1,4 +1,4 @@
-import react from 'react';
+import react, {useState} from 'react';
 import {Text, View} from 'react-native';
 import styles from '../styles/styles';
 import D20 from './dice';
