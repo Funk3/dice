@@ -5,6 +5,7 @@ import styles from './styles/styles';
 //components
 import Bottom_Bar from './components/bottom_bar';
 import Main_Screen from './components/main_screen';
+import Dice from './components/dice';
 
 const Main = () => {
   return (
