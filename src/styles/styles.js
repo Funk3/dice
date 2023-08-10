@@ -1,52 +1,56 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import react from 'react'
+import { StyleSheet, Dimensions } from 'react-native';
+
+
 
 const styles = StyleSheet.create({
-  divContainer: {
+  container: {
+    flex: 1,
     backgroundColor: 'grey',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: 'red',
-    height: '100%',
-  },
-  Bottom_Bar: {
-    color: 'yellow',
-    fontWeight: 'bold',
-    fontSize: 30
-  },
-  Main_Screen: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 50
-  },
-  mainContainer: {
-    flexGrow: 12,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'blue'
   },
-  bottomContainer:
-  {
-    flexGrow: 1,
+  mainScreen: {
+    flex: 1,
+    alignSelf: 'center',
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 200,
+    marginTop: 250,
+  },
+  buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'green'
+    paddingBottom: 20,
+
+
   },
-  bottomBarButton: {
-    backgroundColor: 'blue', // Adjust the background color as needed
-    padding: 10,
-    margin: 5,
+  diceButton: {
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 5,
     borderRadius: 5,
+    backgroundColor: 'white',
+    borderWidth: 2,
+    borderColor: 'black',
   },
-  bottomBarButtonText: {
-    color: 'white', // Adjust the text color as needed
+  diceImage: {
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  diceButtonText: {
+    color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
   },
-})
+});
 
-export default styles
+export default styles;
+
+
+

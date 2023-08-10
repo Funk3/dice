@@ -1,11 +1,11 @@
-import react from 'react';
+import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import styles from '../styles/styles';
 
 const Bottom_Bar = ({onPress, title}) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.bottomBarButton}>
-      <Text style={styles.bottomBarButtonText}>{title}</Text>
+    <TouchableOpacity onPress={onPress} style={styles.diceButton}>
+      <Text style={styles.diceButtonText}>{title}</Text>
     </TouchableOpacity>
   );
 };
