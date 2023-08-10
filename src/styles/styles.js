@@ -35,7 +35,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'green'
-  }
+  },
+  bottomBarButton: {
+    backgroundColor: 'blue', // Adjust the background color as needed
+    padding: 10,
+    margin: 5,
+    borderRadius: 5,
+  },
+  bottomBarButtonText: {
+    color: 'white', // Adjust the text color as needed
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
 })
 
 export default styles

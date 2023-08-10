@@ -1,18 +1,19 @@
 import react, {useState} from 'react';
-import {View} from 'react-native';
+import {View, Text} from 'react-native';
 import styles from '../styles/styles';
-import Dice from './dice';
+import Bottom_Bar from './bottom_bar';
+import DiceSelector from './dices_selector';
 
 const Main_Screen = () => {
+  const [selectedResult, setSelectedResult] = useState(null);
+
   return (
     <View style={styles.mainContainer}>
-      <Dice sides={20} title="D20" />
-      <Dice sides={100} title="D100" />
-      <Dice sides={12} title="D12" />
-      <Dice sides={10} title="D10" />
-      <Dice sides={8} title="D8" />
-      <Dice sides={6} title="D6" />
-      <Dice sides={4} title="D4" />
+      <Text style={styles.Main_Screen}>
+        Result: {selectedResult !== null ? selectedResult : 'Roll the dice!'}
+      </Text>
+      <DiceSelector setSelectedResult={setSelectedResult} />
+      <Bottom_Bar />
     </View>
   );
 };

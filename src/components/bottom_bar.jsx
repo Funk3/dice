@@ -1,10 +1,13 @@
-import react, {useState} from 'react';
-import {Button, Text, View} from 'react-native';
+import react from 'react';
+import {Text, TouchableOpacity} from 'react-native';
 import styles from '../styles/styles';
-import D20 from './dice';
 
-const Bottom_Bar = ({onPress}) => {
-  return <Button title="Roll Dice" onPress={onPress} />;
+const Bottom_Bar = ({onPress, title}) => {
+  return (
+    <TouchableOpacity onPress={onPress} style={styles.bottomBarButton}>
+      <Text style={styles.bottomBarButtonText}>{title}</Text>
+    </TouchableOpacity>
+  );
 };
 
 export default Bottom_Bar;
