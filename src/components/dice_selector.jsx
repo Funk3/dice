@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import {View, TouchableOpacity, Image} from 'react-native';
 import styles from '../styles/styles'; // Your styles
 
 import D20 from '../styles/dicesvg/D20.png';

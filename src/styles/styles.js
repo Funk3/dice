@@ -1,12 +1,10 @@
 import react from 'react'
 import { StyleSheet, Dimensions } from 'react-native';
 
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'grey',
+    backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -23,8 +21,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingBottom: 20,
-
-
   },
   diceButton: {
     width: 40,
